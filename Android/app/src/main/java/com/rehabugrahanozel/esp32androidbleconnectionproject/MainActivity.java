@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity{
     private static String [] spinnerItems = new String[]{"0(off)", "1(off)", "2(off)", "3(off)",
             "4(off)", "5(off)", "12(off)", "13(off)", "14(off)", "15(off)", "16(off)", "17(off)",
             "18(off)", "19(off)", "21(off)", "22(off)", "23(off)", "25(off)", "26(off)", "27(off)",
-            "32(off)", "33(off)", "34(off)", "36(off)", "39(off)"};
+            "32(off)", "33(off)"};
     private static Button ledControlBtn;
 
 
@@ -78,7 +78,6 @@ public class MainActivity extends AppCompatActivity{
                 // Bir öğe seçildi. kullanarak seçilen öğeyi geri alabilirsiniz.
                 // getSelectedItem()
 
-                Toast.makeText(getApplicationContext(),adapterView.getSelectedItem().toString(),Toast.LENGTH_LONG).show();
                 selectedButtonPos = adapterView.getSelectedItemPosition();
                 if (currentPinStatus().equals("on")) {
                     Log.e("Current Status", "on");
